@@ -1,0 +1,19 @@
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cpbeamer}
+
+%% For customizing how certain words are displayed
+
+\newcommand{\cPanel}{cPanel }
+\newcommand{\WHM}{WHM }
+\newcommand{\EasyApache}{EasyApache }
+
+%% For typesetting the shell prompt
+
+\newcommand{\prompt}[1][\home]{\texttt{\textbf{root@zaphod:[#1]\# }}}
+\newcommand{\bash}[2][\home]{\prompt[#1] \, \texttt{#2} \\}
+
+%% For typesetting shell commands
+
+\newcommand{\home}{\texttt{\~{}}}
+\newcommand{\pipe}{\texttt{\textbf{\textbar}} \,}
